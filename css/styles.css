@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{font-family: 'popins',sans-serif;
+background-color: #1e1d2b;}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1e1d2b;
+    color: #fff;
+    position: relative;
+}
+
+  /* responsive */
+nav.active {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav h2.logo {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #ff702a;
+}
+
+nav .bars {
+    position: absolute;
+    right: 1rem;
+    font-size: xx-large;
+    display: none;
+}
+
+ul.nav-links {
+    display: flex;
+}
+
+/* responsive */
+nav.active ul.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+li.nav-link {
+    list-style: none;
+    margin: 0.5rem 1rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+li.nav-link:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+li.nav-link.auth {
+    border: 2px solid white;
+    border-radius: 1rem;
+}
+
+li.nav-link a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: large;
+text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+nav .bars {
+    display: block;
+}
+
+nav .nav-links {
+    display: none;
+}
+}
+
+.Home{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.Home div h1{
+    position: relative;
+    font-size: 80px;
+    top: 150px;
+    left: 150px;
+    color: #ff702a;
+    width: 500px;
+}
+.Home h3{
+    position: relative;
+    font-size: xx-large;
+    color: #fff;
+    top: 150px;
+    left: 150px;
+    width: 500px;
+}
+.Home div.boton{
+    position: absolute;
+    color: #fff;
+    background-color: #ff702a;
+    padding-left: 10px;
+    font-size: 40px;
+    width: 260px;
+    left: 150px;
+    bottom: 140px;
+}
+
+.Home img{
+    position: relative;
+    left: 620px ; 
+    bottom: 160px;
+    width: 400PX;
+}
+
+.About{
+    width: 100vw;
+    height: 100vh;
+}
+.About div{
+    position: relative;
+    left: 620px;
+}
+.About div h4{
+    color: #ff702a;
+    position: relative;
+    top: 0px
+}
+.About div h2{
+    position: relative;
+    color: #fff;
+    width: 400px;
+    font-size: 36px;
+}
+.About div.text{
+    position: relative;
+    color: #fff;
+    width: 400px;
+    left: 620px;
+    font-size: 24px;
+}
+.About img{
+    position: relative;
+    bottom: 260px;
+    right: -60px; ;
+    width: 450px;
+}
+
+.Menu{
+    width: 100vw;
+    height: 100vh;
+}
+
+.Menu h4{
+    color: #ff702a;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+.Menu h2{
+    position: relative;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+}
+.Menu .opc{
+    float: left; 
+    width: 20%; 
+    background-color: #ffefe8; 
+    padding: 20px; 
+    margin-top: 50px;
+    margin-right: 10px; 
+    margin-left: 100px;
+}
+
+.Menu .product{
+    text-align: center;
+    font-size: 24px;
+}
+.Menu .description{
+    text-align: center;
+    font-size: 18px;
+}
+.Menu .price{
+    text-align: center;
+    font-size: 18px;
+    color: #ff702a;
+}
+.Menu img{
+    width: 80%;
+    margin-left: 40px;
+}
+.Menu div.opc1{
+    float: left;
+    top: 100px;
+    left: 150px;
+}
+.Menu div.opc2{
+    float: left;
+}
+
+.service{
+    width: 100vw;
+    height: 100vh;
+}
+.service h4{
+    color: #ff702a;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+.service h2{
+position: relative;
+color: #fff;
+font-size: 36px;
+text-align: center;
+}
+.service .cont{
+    float: left; 
+    width: 20%;  
+    padding: 20px; 
+    margin-top: 50px;
+    margin-right: 10px; 
+    margin-left: 100px;
+}
+.service h3{
+    text-align: center;
+    color: #ff702a;
+}
+.service h3.text{
+    position: relative;
+    right: 45px;
+    width: 300px ; 
+    color: #ffefe8;
+}
+.service img{
+    width: 80%;
+    margin-left: 40px;
+}
+
+.Learn{
+width: 100vw;
+height: 100vh;
+}
+.Learn div {
+    position: relative;
+    width: 80%; 
+    background-color: #ffefe8; 
+    padding: 20px; 
+    margin-top: 50px;
+    margin-right: 10px; 
+    margin-left: 100px;
+}
+.Learn div.boton{
+    position: relative;
+    color: #fff;
+    background-color: #ff702a;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 140px;
+    left: 30%;
+    bottom: 10px;
+}
+.Learn div h2{
+    text-align: center;
+    font-size: 55px;
+}
